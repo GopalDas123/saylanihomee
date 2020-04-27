@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            text-align: center;
+
+        }
+        .opt{
+            list-style-type: none;
+            display: inline-block;
+            text-align: center;
+
+        }
+        ul a li{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin:20px;
+            font-size: 20px;
+        
+        }
+        a::after{
+            color: black;
+            margin: 20px;
+            font-size: 20px;
+            content: '';
+            width: 0px;
+            height: 2px;
+            background-color: chartreuse;
+            display: block;
+            margin-top:5px;
+            transition: 0.5s;
+        }
+        a:hover::after{
+            
+            width: 100%;
+            height: 2px;
+            
+        }
+        a{
+            text-decoration: none;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="background-color: black;">
+        <ul>
+            <a href="#" class="opt"><li>Home</li></a>
+            <a href="#" class="opt"><li>About</li></a>
+            <a href="#" class="opt"><li>Gallery</li></a>
+        </ul>
+    </div>
+</body>
+</html>
